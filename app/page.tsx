@@ -1,6 +1,6 @@
 "use client";
 
-import PaginaInicial from "./home/page";
+import PaginaInicial from "./Home/page";
 import Link from "next/link";
 
 export default function Home() {
