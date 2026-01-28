@@ -1,8 +1,8 @@
-import Hero from "../components/hero/hero";
-import Plataforma from "../components/plataforma/plataforma";
+import Hero from "../components/Hero/Hero";
+import Plataforma from "../components/Plataforma/Plataforma";
 import Image from "next/image";
-import Features from "../components/features/Features";
-import Criadores from "../components/criadores/criadores";
+import Features from "../components/Features/Features";
+import Criadores from "../components/Criadores/Criadores";
 
 export default function PaginaInicial() {
     return (

@@ -6,8 +6,8 @@ import {
     SiTailwindcss,
     SiTypescript,
 } from "react-icons/si";
-import SobreNos from "../sobreNos/sobreNos";
-import GaleriaAnimada from "../galeriaAnimada/galeriaAnimada";
+import SobreNos from "../SobreNos/SobreNos";
+import GaleriaAnimada from "../GaleriaAnimada/GaleriaAnimada";
 
 function Plataforma() {
     return (
