@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import FeatureCard from "@/app/components/FeatureCard/FeatureCard";
-import FeatureSkeleton from "@/app/components/Skeleton/Skeleton";
-import { RegisterModal, LoginModal } from "@/app/components/PopUp/PopUp";
+import FeatureCard from "@/app/components/featureCard/featureCard";
+import FeatureSkeleton from "@/app/components/skeleton/skeleton";
+import { RegisterModal, LoginModal } from "@/app/components/popUp/popUp";
 
 export default function InvoicesDemoPage() {
     const [loadedCards, setLoadedCards] = useState<boolean[]>([

@@ -29,11 +29,6 @@ const Navbar: React.FC = () => {
         }
     }, [isMobileMenuOpen]);
 
-    // Fecha o menu mobile quando a rota muda
-    useEffect(() => {
-        setIsMobileMenuOpen(false);
-    }, [pathname]);
-
     // Função para clicar no logo
     const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
@@ -44,7 +39,6 @@ const Navbar: React.FC = () => {
             // Se não está na home, redireciona para a home
             router.push("/");
         }
-        setIsMobileMenuOpen(false);
     };
 
     // Função para scroll suave
@@ -65,6 +59,18 @@ const Navbar: React.FC = () => {
         }
     };
 
+    const handleLoginClick = (e?: React.MouseEvent) => {
+        e?.preventDefault();
+        setIsMobileMenuOpen(false);
+        router.push("/login");
+    };
+
+    const handleSingupClick = (e?: React.MouseEvent) => {
+        e?.preventDefault();
+        setIsMobileMenuOpen(false);
+        router.push("/singup");
+    };
+
     const navLinks = [
         { name: "Início", href: "#Home" },
         { name: "Plataforma", href: "#Plataforma" },
@@ -80,7 +86,7 @@ const Navbar: React.FC = () => {
                     : "bg-transparent py-2"
             }`}
         >
-            <div className="container mx-auto px-6 flex justify-between items-center">
+            <div className="container mx-auto px-6 flex items-center justify-between">
                 <a
                     href="/"
                     onClick={handleLogoClick}
@@ -103,7 +109,7 @@ const Navbar: React.FC = () => {
 
                 {/* Desktop Navigation */}
                 {isHomePage && (
-                    <div className="hidden md:flex items-center gap-10">
+                    <div className="hidden md:flex flex-1 justify-center items-center">
                         <ul className="flex items-center gap-8">
                             {navLinks.map((link) => (
                                 <li key={link.name}>
@@ -127,50 +133,77 @@ const Navbar: React.FC = () => {
                     </div>
                 )}
 
-                {/* Mobile Toggle */}
-                {isHomePage && (
-                    <button
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        className={`md:hidden p-2 rounded-xl transition-colors ${
-                            isScrolled
-                                ? "text-gray-900 hover:bg-gray-100"
-                                : "text-white hover:bg-white/10"
-                        }`}
-                        aria-label="Toggle Menu"
-                    >
-                        {isMobileMenuOpen ? (
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-7 w-7"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M6 18L18 6M6 6l12 12"
-                                />
-                            </svg>
-                        ) : (
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-7 w-7"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M4 6h16M4 12h16m-7 6h7"
-                                />
-                            </svg>
-                        )}
-                    </button>
-                )}
+                {/* Buttons + Mobile Toggle (right) */}
+                <div className="flex items-center gap-4">
+                    {/* Desktop buttons */}
+                    <div className="hidden md:flex items-center gap-3">
+                        <button
+                            onClick={handleLoginClick}
+                            className={`px-4 py-2 rounded-md font-medium transition-colors ${
+                                isScrolled
+                                    ? "text-gray-700 hover:bg-gray-100"
+                                    : "text-white hover:bg-white/10"
+                            }`}
+                            aria-label="Entrar"
+                        >
+                            Entrar
+                        </button>
+                        <button
+                            onClick={handleSingupClick}
+                            className="px-4 py-2 rounded-md bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition-colors"
+                            aria-label="Criar Conta"
+                        >
+                            Criar Conta
+                        </button>
+                    </div>
+
+                    {/* Mobile Toggle */}
+                    {isHomePage && (
+                        <button
+                            onClick={() =>
+                                setIsMobileMenuOpen(!isMobileMenuOpen)
+                            }
+                            className={`md:hidden p-2 rounded-xl transition-colors ${
+                                isScrolled
+                                    ? "text-gray-900 hover:bg-gray-100"
+                                    : "text-white hover:bg-white/10"
+                            }`}
+                            aria-label="Toggle Menu"
+                        >
+                            {isMobileMenuOpen ? (
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="h-7 w-7"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M6 18L18 6M6 6l12 12"
+                                    />
+                                </svg>
+                            ) : (
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="h-7 w-7"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M4 6h16M4 12h16m-7 6h7"
+                                    />
+                                </svg>
+                            )}
+                        </button>
+                    )}
+                </div>
             </div>
 
             {/* Mobile Menu Overlay */}
@@ -221,6 +254,21 @@ const Navbar: React.FC = () => {
                             </li>
                         ))}
                     </ul>
+
+                    <div className={`mt-12 flex flex-col items-center gap-4`}>
+                        <button
+                            onClick={handleLoginClick}
+                            className="w-56 px-4 py-3 rounded-md font-medium text-white bg-transparent border border-white/40 hover:bg-white/10 transition-colors"
+                        >
+                            Entrar
+                        </button>
+                        <button
+                            onClick={handleSingupClick}
+                            className="w-56 px-4 py-3 rounded-md font-semibold bg-indigo-600 text-white hover:bg-indigo-700 transition-colors"
+                        >
+                            Criar Conta
+                        </button>
+                    </div>
                 </div>
             )}
         </nav>

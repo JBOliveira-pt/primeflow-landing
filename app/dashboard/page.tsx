@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import FeatureCard from "../components/FeatureCard/FeatureCard";
-import FeatureSkeleton from "../components/Skeleton/Skeleton";
-import { RegisterModal, LoginModal } from "@/app/components/PopUp/PopUp";
+import FeatureCard from "../components/featureCard/featureCard";
+import FeatureSkeleton from "../components/skeleton/skeleton";
+import { RegisterModal, LoginModal } from "@/app/components/popUp/popUp";
 
 export default function DashboardDemoPage() {
     const [loadedCards, setLoadedCards] = useState<boolean[]>([
