@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import NavBar from "./components/NavBar/NavBar";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -16,19 +17,23 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
     title: "PrimeFlow - MVP",
     description: "The future of financial clarity starts here.",
-    viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({
     children,
-}: {
+}: Readonly<{
     children: React.ReactNode;
-}) {
+}>) {
     return (
-        <html lang="en">
-            <body className="min-h-screen bg-background font-sans antialiased">
-                <NavBar />
-                {children}
+        <html lang="en" className="overflow-x-hidden">
+            <body
+                className={`${geistSans.variable} ${geistMono.variable} antialiased m-0 p-0 overflow-x-hidden`}
+            >
+                <Navbar />
+                <main className="w-full max-w-full overflow-x-hidden">
+                    {children}
+                </main>
+                <Footer />
             </body>
         </html>
     );
