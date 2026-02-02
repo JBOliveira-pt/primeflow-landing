@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import FeatureCard from "../components/FeatureCard/FeatureCard";
 import FeatureSkeleton from "../components/Skeleton/Skeleton";
 import { RegisterModal, LoginModal } from "@/app/components/PopUp/PopUp";
@@ -88,7 +87,7 @@ export default function DashboardDemoPage() {
                                         description: "base total de clientes",
                                     },
                                 ]}
-                                imageSrc="/images/financeoverview.png"
+                                imageName="Finance Overview"
                                 imageAlt="Stats Cards - Visão Geral Financeira"
                                 imagePosition="right"
                             />
@@ -122,7 +121,7 @@ export default function DashboardDemoPage() {
                                             "Tome decisões informadas sobre seu negócio",
                                     },
                                 ]}
-                                imageSrc="/images/recentrevenue.png"
+                                imageName="Recent Revenue"
                                 imageAlt="Recent Revenue - Gráfico de 12 meses"
                                 imagePosition="left"
                             />
@@ -158,7 +157,7 @@ export default function DashboardDemoPage() {
                                         description: "Atualizado em tempo real",
                                     },
                                 ]}
-                                imageSrc="/images/latestinvoices.png"
+                                imageName="Latest Invoices"
                                 imageAlt="Latest Invoices - Últimas 5 faturas"
                                 imagePosition="right"
                             />

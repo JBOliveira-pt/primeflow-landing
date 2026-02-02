@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import FeatureCard from "@/app/components/FeatureCard/FeatureCard";
 import FeatureSkeleton from "@/app/components/Skeleton/Skeleton";
 import { RegisterModal, LoginModal } from "@/app/components/PopUp/PopUp";
@@ -95,7 +94,7 @@ export default function InvoicesDemoPage() {
                                             "filtre entre Paid e Pending",
                                     },
                                 ]}
-                                imageSrc="/images/search-invoices.png"
+                                imageName="Search Invoices"
                                 imageAlt="Pesquisa de Invoices"
                                 imagePosition="right"
                             />
@@ -146,7 +145,7 @@ export default function InvoicesDemoPage() {
                                             "Navegue por todas as invoices",
                                     },
                                 ]}
-                                imageSrc="/images/table-invoices.png"
+                                imageName="Table Invoices"
                                 imageAlt="Tabela de Invoices"
                                 imagePosition="left"
                             />
@@ -192,7 +191,7 @@ export default function InvoicesDemoPage() {
                                             "Interface intuitiva para gestão",
                                     },
                                 ]}
-                                imageSrc="/images/editdelete-invoices.png"
+                                imageName="Edit Delete Invoices"
                                 imageAlt="Criar e Editar Invoices"
                                 imagePosition="right"
                             />
