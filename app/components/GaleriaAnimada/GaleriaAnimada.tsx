@@ -70,7 +70,7 @@ export default function GaleriaAnimada() {
     return (
         <div
             ref={containerRef}
-            className="flex flex-col items-center justify-start min-h-fit bg-slate-950 px-8 pt-8 pb-2 relative overflow-visible"
+            className="flex flex-col items-center justify-start min-h-fit bg-slate-950 px-4 sm:px-8 pt-8 pb-2 relative overflow-hidden w-full max-w-full"
         >
             {/* Container com posição relativa para sobrepor imagens */}
             <div className="relative w-full max-w-3xl flex-1 min-h-[320px]">

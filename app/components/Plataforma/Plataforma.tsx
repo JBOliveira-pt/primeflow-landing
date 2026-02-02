@@ -11,24 +11,24 @@ import GaleriaAnimada from "../GaleriaAnimada/GaleriaAnimada";
 
 function Plataforma() {
     return (
-        <div className="bg-slate-950 font-sans">
+        <div className="bg-slate-950 font-sans w-full max-w-full overflow-hidden">
             {/* Seção com 2 colunas - Sobre Nós e Galeria */}
-            <section id="Plataforma" className="w-full relative pt-16 pb-16">
+            <section id="Plataforma" className="w-full max-w-full relative pt-16 pb-16">
                 {/* Desktop: 2 colunas */}
-                <div className="hidden md:flex items-start">
+                <div className="hidden md:flex items-start w-full max-w-full">
                     {/* Coluna Esquerda - Sobre Nós (Fixo) */}
-                    <div className="w-1/2">
+                    <div className="w-1/2 max-w-[50%]">
                         <SobreNos />
                     </div>
 
                     {/* Coluna Direita - Galeria Animada */}
-                    <div className="w-1/2">
+                    <div className="w-1/2 max-w-[50%] overflow-hidden">
                         <GaleriaAnimada />
                     </div>
                 </div>
 
                 {/* Mobile: Stack vertical */}
-                <div className="md:hidden">
+                <div className="md:hidden w-full max-w-full overflow-hidden">
                     <SobreNos />
                     <GaleriaAnimada />
                 </div>
