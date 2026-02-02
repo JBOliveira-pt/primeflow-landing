@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
                         : "bg-transparent py-2"
                 }`}
             >
-                <div className="container mx-auto px-6 flex items-center justify-between">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between w-full">
                     <a
                         href="/"
                         onClick={handleLogoClick}
