@@ -37,7 +37,10 @@ const FeatureCard = ({
 
 export default function Features() {
     return (
-        <section id="Funcionalidades" className="py-20 bg-slate-950 w-full max-w-full overflow-hidden">
+        <section
+            id="Funcionalidades"
+            className="py-20 bg-slate-950 w-full max-w-full overflow-hidden"
+        >
             <div className="absolute left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent"></div>
 
             {/* Decorative corner glow */}
@@ -57,7 +60,7 @@ export default function Features() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8  mx-auto justify-items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8  mx-auto justify-items-center">
                     <div className="">
                         <FeatureCard
                             icon={<BarChart3 size={24} />}

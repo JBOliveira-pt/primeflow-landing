@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         if (isMobileMenuOpen) {
             document.body.style.overflow = "hidden";
         } else {
-            document.body.style.overflow = "unset";
+            document.body.style.overflow = "hidden";
         }
     }, [isMobileMenuOpen]);
 
@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
                         : "bg-transparent py-2"
                 }`}
             >
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between w-full">
+                <div className="container mx-auto px-6 flex items-center justify-between">
                     <a
                         href="/"
                         onClick={handleLogoClick}
@@ -215,7 +215,7 @@ const Navbar: React.FC = () => {
             {/* Mobile Menu Overlay */}
             {isHomePage && (
                 <div
-                    className={`fixed inset-0 w-full h-[100dvh] bg-gray-900/95 z-[110] transition-all duration-500 md:hidden flex flex-col items-center justify-center ${
+                    className={`fixed inset-0 w-screen h-[100dvh] bg-gray-900/95 z-[110] transition-all duration-500 md:hidden flex flex-col items-center justify-center ${
                         isMobileMenuOpen
                             ? "opacity-100 visible"
                             : "opacity-0 invisible pointer-events-none"

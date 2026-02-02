@@ -86,28 +86,28 @@ export default function Footer() {
                                 href="/dashboard"
                                 className="text-slate-400 hover:text-indigo-400 transition-colors text-sm flex items-center gap-2"
                             >
-                                <span className="text-lg">📊</span>
+                                <span className="text-lg"></span>
                                 <span>Dashboard</span>
                             </Link>
                             <Link
                                 href="/invoices"
                                 className="text-slate-400 hover:text-indigo-400 transition-colors text-sm flex items-center gap-2"
                             >
-                                <span className="text-lg">🧾</span>
+                                <span className="text-lg"></span>
                                 <span>Invoices</span>
                             </Link>
                             <Link
                                 href="/customers"
                                 className="text-slate-400 hover:text-indigo-400 transition-colors text-sm flex items-center gap-2"
                             >
-                                <span className="text-lg">👥</span>
+                                <span className="text-lg"></span>
                                 <span>Customers</span>
                             </Link>
                             <Link
                                 href="/users"
                                 className="text-slate-400 hover:text-indigo-400 transition-colors text-sm flex items-center gap-2"
                             >
-                                <span className="text-lg">🔐</span>
+                                <span className="text-lg"></span>
                                 <span>Users</span>
                             </Link>
                         </nav>

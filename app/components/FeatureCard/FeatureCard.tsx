@@ -57,7 +57,9 @@ export default function FeatureCard({
                 </div>
 
                 {/* Image Section */}
-                <div className={`${isImageLeft ? "order-1" : "order-2"} flex items-center justify-center`}>
+                <div
+                    className={`${isImageLeft ? "order-1" : "order-2"} flex items-center justify-center`}
+                >
                     <DynamicImage
                         imageName={imageName}
                         fallbackSrc="/images/placeholder.svg"
