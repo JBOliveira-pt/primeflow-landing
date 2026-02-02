@@ -14,7 +14,7 @@ interface DynamicImageProps {
 
 export default function DynamicImage({
     imageName,
-    fallbackSrc = "/images/placeholder.png",
+    fallbackSrc = "/images/placeholder.svg",
     className = "",
     width = 500,
     height = 300,

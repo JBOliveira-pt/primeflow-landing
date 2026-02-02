@@ -29,7 +29,7 @@ export default function FeatureCard({
 
     return (
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-            <div className="grid md:grid-cols-2 gap-8 p-8">
+            <div className="grid md:grid-cols-2 gap-8 p-8 items-center">
                 {/* Text Section */}
                 <div
                     className={`${isImageLeft ? "order-2" : "order-1"} space-y-6`}
@@ -57,13 +57,13 @@ export default function FeatureCard({
                 </div>
 
                 {/* Image Section */}
-                <div className={`${isImageLeft ? "order-1" : "order-2"}`}>
+                <div className={`${isImageLeft ? "order-1" : "order-2"} flex items-center justify-center`}>
                     <DynamicImage
                         imageName={imageName}
-                        fallbackSrc="/images/placeholder.png"
-                        width={600}
-                        height={400}
-                        className="rounded-xl border-2 border-gray-300"
+                        fallbackSrc="/images/placeholder.svg"
+                        width={800}
+                        height={533}
+                        className="rounded-xl border-2 border-gray-300 w-full h-auto"
                     />
                 </div>
             </div>
