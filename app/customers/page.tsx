@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import FeatureCard from "@/app/components/FeatureCard/FeatureCard";
 import FeatureSkeleton from "@/app/components/Skeleton/Skeleton";
 import { RegisterModal, LoginModal } from "@/app/components/PopUp/PopUp";
@@ -12,7 +11,6 @@ export default function CustomersDemoPage() {
         false,
         false,
     ]);
-
     const [isRegisterOpen, setIsRegisterOpen] = useState(false);
     const [isLoginOpen, setIsLoginOpen] = useState(false);
 
@@ -42,159 +40,105 @@ export default function CustomersDemoPage() {
 
     return (
         <div className="relative min-h-screen py-24 bg-slate-950 relative overflow-hidden">
-            {/* Conteúdo */}
             <div className="relative z-0">
-                {/* Header */}
                 <div className="text-center text-white mt-20">
                     <h1 className="text-5xl font-bold mb-4">
                         PrimeFlow <strong>Customers</strong>
                     </h1>
                     <p className="text-xl text-gray-200">
-                        Gerencie e acompanhe todos os seus clientes em um único
-                        lugar
+                        Gerencie sua base de clientes de forma eficiente
                     </p>
                 </div>
 
                 <div className="max-w-6xl mx-auto px-6 py-16">
-                    {/* Features Grid */}
                     <div className="space-y-20">
-                        {/* Feature 1: Search Customers */}
                         {loadedCards[0] ? (
                             <FeatureCard
-                                badge="🔍 Busca Inteligente"
-                                title="Localize Clientes Facilmente"
-                                description="Encontre seus clientes rapidamente com filtros avançados e busca por múltiplos campos."
+                                badge="🔍 Pesquisa de Clientes"
+                                title="Encontre Qualquer Cliente"
+                                description="Sistema de busca avançada para encontrar clientes rapidamente."
                                 items={[
                                     {
                                         emoji: "👤",
                                         label: "Nome",
-                                        description:
-                                            "pesquise por nome completo ou parcial",
+                                        description: "Busque por nome completo",
                                     },
                                     {
                                         emoji: "📧",
-                                        label: "E-mail",
+                                        label: "Email",
                                         description:
-                                            "filtre por endereço de e-mail",
+                                            "Filtre por endereço de email",
                                     },
                                     {
                                         emoji: "📞",
                                         label: "Telefone",
                                         description:
-                                            "busque por número de telefone",
-                                    },
-                                    {
-                                        emoji: "🏢",
-                                        label: "Empresa",
-                                        description:
-                                            "encontre por nome da empresa",
-                                    },
-                                    {
-                                        emoji: "📍",
-                                        label: "Localização",
-                                        description:
-                                            "filtre por cidade ou país",
+                                            "Encontre por número de telefone",
                                     },
                                 ]}
-                                imageSrc="/images/search-customers.png"
-                                imageAlt="Pesquisa de Customers"
+                                imageName="Customers Screen"
+                                imageAlt="Busca de Clientes"
                                 imagePosition="right"
                             />
                         ) : (
                             <FeatureSkeleton />
                         )}
 
-                        {/* Feature 2: Customer Directory */}
                         {loadedCards[1] ? (
                             <FeatureCard
-                                badge="📋 Diretório Completo"
-                                title="Visão Geral de Clientes"
-                                description="Acesse informações completas de todos os seus clientes em uma tabela organizada e fácil de navegar."
+                                badge="📋 Lista Completa"
+                                title="Base de Clientes"
+                                description="Visualize todos os seus clientes em uma interface organizada."
                                 items={[
                                     {
-                                        emoji: "👤",
-                                        label: "Avatar & Nome",
-                                        description:
-                                            "Foto de perfil e nome do cliente",
+                                        emoji: "👥",
+                                        label: "Avatar e Nome",
+                                        description: "Identificação visual",
                                     },
                                     {
                                         emoji: "📧",
                                         label: "Email",
-                                        description:
-                                            "Endereço de e-mail para contato",
-                                    },
-                                    {
-                                        emoji: "💰",
-                                        label: "Total Invoices",
-                                        description:
-                                            "Quantidade de faturas por cliente",
-                                    },
-                                    {
-                                        emoji: "💵",
-                                        label: "Total Paid",
-                                        description:
-                                            "Valor total pago pelo cliente",
-                                    },
-                                    {
-                                        emoji: "⏰",
-                                        label: "Status",
-                                        description: "Ativo ou Inativo",
+                                        description: "Contato direto",
                                     },
                                     {
                                         emoji: "📄",
                                         label: "Paginação",
-                                        description:
-                                            "Navegue por todos os clientes",
+                                        description: "Navegue facilmente",
                                     },
                                 ]}
-                                imageSrc="/images/table-customers.png"
-                                imageAlt="Tabela de Customers"
+                                imageName="Customers Screen"
+                                imageAlt="Lista de Clientes"
                                 imagePosition="left"
                             />
                         ) : (
                             <FeatureSkeleton />
                         )}
 
-                        {/* Feature 3: Manage Customers */}
                         {loadedCards[2] ? (
                             <FeatureCard
-                                badge="⚙️ Administração"
-                                title="Adicionar e Gerenciar Clientes"
-                                description="Controle total sobre o cadastro de clientes com operações completas de CRUD."
+                                badge="⚙️ Gestão"
+                                title="Criar e Editar Clientes"
+                                description="Controle total sobre sua base de clientes."
                                 items={[
                                     {
                                         emoji: "➕",
-                                        label: "Add Customer",
+                                        label: "Adicionar",
                                         description:
-                                            "Crie novos clientes com formulário completo",
+                                            "Novos clientes facilmente",
                                     },
                                     {
                                         emoji: "✏️",
-                                        label: "Edit",
-                                        description:
-                                            "Atualize informações de clientes existentes",
+                                        label: "Editar",
+                                        description: "Atualize informações",
                                     },
                                     {
                                         emoji: "🗑️",
-                                        label: "Delete",
-                                        description:
-                                            "Remova clientes do sistema quando necessário",
-                                    },
-                                    {
-                                        emoji: "📊",
-                                        label: "Ver Detalhes",
-                                        description:
-                                            "Acesse histórico e métricas do cliente",
-                                    },
-                                    {
-                                        emoji: "🔒",
-                                        label: "Controle de Acesso",
-                                        description:
-                                            "Apenas administradores podem gerir clientes",
+                                        label: "Remover",
+                                        description: "Delete quando necessário",
                                     },
                                 ]}
-                                imageSrc="/images/editdelete-customers.png"
-                                imageAlt="Gerenciar Customers"
+                                imageName="Customers Screen"
+                                imageAlt="Gestão de Clientes"
                                 imagePosition="right"
                             />
                         ) : (
@@ -202,18 +146,13 @@ export default function CustomersDemoPage() {
                         )}
                     </div>
 
-                    {/* Footer CTA */}
                     <div className="mt-20 text-center bg-gradient-to-b from-gray-900 to-gray-400 rounded-2xl p-12 text-white shadow-2xl">
                         <h3 className="text-3xl font-bold mb-4">
-                            Organize sua base de clientes
+                            Pronto para otimizar sua gestão de clientes?
                         </h3>
                         <p className="text-xl text-purple-100 mb-8">
-                            O <strong>PrimeFlow</strong> oferece uma plataforma
-                            centralizada para gerenciar todos os dados dos seus
-                            clientes.
-                            <br />
-                            Melhore sua eficiência e fortaleça relacionamentos
-                            com clientes.
+                            Com <strong>PrimeFlow</strong> mantenha sua base de
+                            clientes organizada e acessível.
                         </p>
                         <button
                             onClick={() => setIsRegisterOpen(true)}
