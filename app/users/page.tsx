@@ -50,7 +50,7 @@ export default function UsersDemoPage() {
                     </p>
                 </div>
 
-                <div className="max-w-6xl mx-auto px-6 py-16">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
                     <div className="space-y-20">
                         {loadedCards[0] ? (
                             <FeatureCard

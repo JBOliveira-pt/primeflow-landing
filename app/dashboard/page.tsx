@@ -40,9 +40,9 @@ export default function DashboardDemoPage() {
     }, []);
 
     return (
-        <div className="relative min-h-screen py-24 bg-slate-950 relative overflow-hidden">
+        <div className="min-h-screen py-24 bg-slate-950">
             {/* Conteúdo */}
-            <div className="relative z-0">
+            <div className="relative z-0 w-full max-w-full">
                 {/* Header */}
                 <div className="text-center text-white mt-20">
                     <h1 className="text-5xl font-bold mb-4">
@@ -53,7 +53,7 @@ export default function DashboardDemoPage() {
                     </p>
                 </div>
 
-                <div className="max-w-6xl mx-auto px-6 py-16">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 w-full">
                     {/* Features Grid */}
                     <div className="space-y-20">
                         {/* Feature 1: Stats Cards */}

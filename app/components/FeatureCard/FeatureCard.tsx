@@ -28,8 +28,8 @@ export default function FeatureCard({
     const isImageLeft = imagePosition === "left";
 
     return (
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-            <div className="grid md:grid-cols-2 gap-8 p-8 items-center">
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden w-full max-w-full">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-8 p-4 sm:p-8 items-center">
                 {/* Text Section */}
                 <div
                     className={`${isImageLeft ? "order-2" : "order-1"} space-y-6`}

@@ -215,7 +215,7 @@ const Navbar: React.FC = () => {
             {/* Mobile Menu Overlay */}
             {isHomePage && (
                 <div
-                    className={`fixed inset-0 w-screen h-[100dvh] bg-gray-900/95 z-[110] transition-all duration-500 md:hidden flex flex-col items-center justify-center ${
+                    className={`fixed inset-0 w-full h-[100dvh] bg-gray-900/95 z-[110] transition-all duration-500 md:hidden flex flex-col items-center justify-center ${
                         isMobileMenuOpen
                             ? "opacity-100 visible"
                             : "opacity-0 invisible pointer-events-none"

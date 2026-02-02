@@ -53,7 +53,7 @@ export default function InvoicesDemoPage() {
                     </p>
                 </div>
 
-                <div className="max-w-6xl mx-auto px-6 py-16">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
                     {/* Features Grid */}
                     <div className="space-y-20">
                         {/* Feature 1: Search Invoices */}
