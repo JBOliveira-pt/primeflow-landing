@@ -43,7 +43,7 @@ export default function UsersDemoPage() {
             <div className="relative z-0">
                 <div className="text-center text-white mt-20">
                     <h1 className="text-5xl font-bold mb-4">
-                        PrimeFlow <strong>Users</strong>
+                        PrimeFLOW <strong>Users</strong>
                     </h1>
                     <p className="text-xl text-gray-200">
                         Gerencie usuários e permissões com segurança
@@ -149,7 +149,7 @@ export default function UsersDemoPage() {
                             Pronto para gerenciar usuários com segurança?
                         </h3>
                         <p className="text-xl text-purple-100 mb-8">
-                            Com <strong>PrimeFlow</strong> tenha controle total
+                            Com <strong>PrimeFLOW</strong> tenha controle total
                             sobre acessos e permissões.
                         </p>
                         <button

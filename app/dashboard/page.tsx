@@ -46,7 +46,7 @@ export default function DashboardDemoPage() {
                 {/* Header */}
                 <div className="text-center text-white mt-20">
                     <h1 className="text-5xl font-bold mb-4">
-                        PrimeFlow <strong>Dashboard</strong>
+                        PrimeFLOW <strong>Dashboard</strong>
                     </h1>
                     <p className="text-xl text-gray-200">
                         Gerencie seus clientes e faturas em um só lugar
@@ -172,7 +172,7 @@ export default function DashboardDemoPage() {
                             Pronto para otimizar sua gestão?
                         </h3>
                         <p className="text-xl text-gray-300 mb-8">
-                            O <strong>PrimeFlow</strong> simplifica o controle
+                            O <strong>PrimeFLOW</strong> simplifica o controle
                             de clientes e faturas.
                             <br />
                             Experimente agora e transforme a maneira como você

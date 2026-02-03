@@ -45,7 +45,7 @@ export default function InvoicesDemoPage() {
                 {/* Header */}
                 <div className="text-center text-white mt-20">
                     <h1 className="text-5xl font-bold mb-4">
-                        PrimeFlow <strong>Invoices</strong>
+                        PrimeFLOW <strong>Invoices</strong>
                     </h1>
                     <p className="text-xl text-gray-200">
                         Gerencie todas as suas faturas de forma simples e
@@ -206,7 +206,7 @@ export default function InvoicesDemoPage() {
                             Quer simplificar a gestão de suas faturas?
                         </h3>
                         <p className="text-xl text-purple-100 mb-8">
-                            Com <strong>PrimeFlow</strong> tenha controle
+                            Com <strong>PrimeFLOW</strong> tenha controle
                             completo sobre suas faturas em um só lugar.
                             <br />
                             Experimente agora e transforme a maneira como você

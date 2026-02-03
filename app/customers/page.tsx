@@ -43,7 +43,7 @@ export default function CustomersDemoPage() {
             <div className="relative z-0">
                 <div className="text-center text-white mt-20">
                     <h1 className="text-5xl font-bold mb-4">
-                        PrimeFlow <strong>Customers</strong>
+                        PrimeFLOW <strong>Customers</strong>
                     </h1>
                     <p className="text-xl text-gray-200">
                         Gerencie sua base de clientes de forma eficiente
@@ -151,7 +151,7 @@ export default function CustomersDemoPage() {
                             Pronto para otimizar sua gestão de clientes?
                         </h3>
                         <p className="text-xl text-purple-100 mb-8">
-                            Com <strong>PrimeFlow</strong> mantenha sua base de
+                            Com <strong>PrimeFLOW</strong> mantenha sua base de
                             clientes organizada e acessível.
                         </p>
                         <button
