@@ -29,14 +29,15 @@ export default function Footer() {
                     <div className="order-2 lg:order-1 space-y-6 text-center md:text-left">
                         <div>
                             <h3 className="text-3xl font-bold mb-2 bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-                                PrimeFlow
+                                PrimeFLOW
                             </h3>
                             <p className="text-indigo-400 text-sm font-semibold">
-                                MVP - Financial Platform
+                                <i>
+                                    The future of financial clarity starts here.
+                                </i>
                             </p>
                         </div>
                         <p className="text-slate-400 leading-relaxed">
-                            The future of financial clarity starts here.
                             Simplifique a gestão de clientes e faturas com uma
                             plataforma moderna e intuitiva.
                         </p>
@@ -69,7 +70,7 @@ export default function Footer() {
                                     href="/#Equipe"
                                     className="text-slate-400 hover:text-indigo-400 transition-colors text-sm"
                                 >
-                                    Equipe
+                                    Equipa
                                 </Link>
                             </nav>
                         </div>
@@ -127,7 +128,7 @@ export default function Footer() {
                                 </a>
                                 <div className="text-slate-400 text-sm flex items-center gap-2">
                                     <MapPin size={16} />
-                                    <span>São Paulo, Brasil</span>
+                                    <span>Lisboa, Portugal</span>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +167,7 @@ export default function Footer() {
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         {/* Copyright */}
                         <p className="text-slate-400 text-sm text-center md:text-left">
-                            &copy; {new Date().getFullYear()} PrimeFlow.
+                            &copy; {new Date().getFullYear()} PrimeFLOW.
                             Desenvolvido por{" "}
                             <strong className="text-indigo-400">
                                 Jeison Oliveira, Everton Santos e Bernardo

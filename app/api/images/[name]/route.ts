@@ -3,7 +3,7 @@ import { getImageByName } from "@/lib/queries/images";
 
 export async function GET(
     request: Request,
-    { params }: { params: Promise<{ name: string }> }
+    { params }: { params: Promise<{ name: string }> },
 ) {
     try {
         const { name: imageName } = await params;
@@ -11,7 +11,7 @@ export async function GET(
         if (!imageName) {
             return NextResponse.json(
                 { success: false, error: "Nome da imagem não fornecido" },
-                { status: 400 }
+                { status: 400 },
             );
         }
 
@@ -20,7 +20,7 @@ export async function GET(
         if (!image) {
             return NextResponse.json(
                 { success: false, error: "Imagem não encontrada" },
-                { status: 404 }
+                { status: 404 },
             );
         }
 
@@ -29,7 +29,7 @@ export async function GET(
         console.error("Erro ao buscar imagem:", error);
         return NextResponse.json(
             { success: false, error: "Erro ao buscar imagem" },
-            { status: 500 }
+            { status: 500 },
         );
     }
 }

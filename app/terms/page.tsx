@@ -31,10 +31,10 @@ export default function TermsPage() {
                         <AlertTriangle className="w-6 h-6 text-amber-400 flex-shrink-0 mt-1" />
                         <div>
                             <h3 className="font-bold text-amber-300 mb-2">
-                                Importante - Leia Atentamente
+                                IMPORTANTE - Leia Atentamente
                             </h3>
                             <p className="text-slate-300 text-sm leading-relaxed">
-                                Ao aceder e utilizar a plataforma PrimeFlow,
+                                Ao aceder e utilizar a plataforma PrimeFLOW,
                                 você concorda expressamente com estes Termos e
                                 Condições de Uso. Se não concordar, não deve
                                 utilizar os nossos serviços.
@@ -58,25 +58,26 @@ export default function TermsPage() {
                                 <strong className="text-white">1.1.</strong>{" "}
                                 Estes Termos e Condições de Uso ("Termos")
                                 regulam o acesso e utilização da plataforma
-                                PrimeFlow, operada por:
+                                PrimeFLOW, operada por:
                             </p>
                             <div className="bg-slate-800/50 rounded-lg p-4 ml-4">
                                 <p>
                                     <strong className="text-white">
                                         Entidade:
                                     </strong>{" "}
-                                    PrimeFlow - Soluções de Gestão Financeira,
+                                    PrimeFLOW - Soluções de Gestão Financeira,
                                     Lda.
                                 </p>
                                 <p>
                                     <strong className="text-white">NIF:</strong>{" "}
-                                    [Número de Identificação Fiscal]
+                                    501 007 287
                                 </p>
                                 <p>
                                     <strong className="text-white">
                                         Sede:
                                     </strong>{" "}
-                                    [Morada completa], Portugal
+                                    Atrium Saldanha, Praça Duque de Saldanha, 8º
+                                    E/F, 1050-094, Portugal
                                 </p>
                                 <p>
                                     <strong className="text-white">
@@ -98,7 +99,7 @@ export default function TermsPage() {
                             </div>
                             <p>
                                 <strong className="text-white">1.2.</strong> A
-                                plataforma est�� registada em Portugal e sujeita
+                                plataforma está registada em Portugal e sujeita
                                 à legislação portuguesa e europeia.
                             </p>
                             <p>
@@ -408,7 +409,7 @@ export default function TermsPage() {
                         <div className="space-y-4 text-slate-300">
                             <p>
                                 <strong className="text-white">
-                                    6.1. Direitos da PrimeFlow
+                                    6.1. Direitos da PrimeFLOW
                                 </strong>
                             </p>
                             <p className="ml-4">
@@ -423,7 +424,7 @@ export default function TermsPage() {
                                 <li>Bases de dados e estruturas</li>
                             </ul>
                             <p className="ml-4 mt-2">
-                                são propriedade exclusiva da PrimeFlow ou dos
+                                são propriedade exclusiva da PrimeFLOW ou dos
                                 seus licenciantes.
                             </p>
                             <p className="mt-4">
@@ -542,7 +543,7 @@ export default function TermsPage() {
                         <div className="space-y-4 text-slate-300">
                             <p>
                                 <strong className="text-white">8.1.</strong> Na
-                                máxima extensão permitida por lei, a PrimeFlow
+                                máxima extensão permitida por lei, a PrimeFLOW
                                 não será responsável por:
                             </p>
                             <ul className="list-disc list-inside space-y-2 ml-4">
@@ -587,7 +588,7 @@ export default function TermsPage() {
                         <div className="space-y-4 text-slate-300">
                             <p>
                                 Você concorda em indemnizar e isentar a
-                                PrimeFlow, seus administradores, colaboradores e
+                                PrimeFLOW, seus administradores, colaboradores e
                                 parceiros de quaisquer reclamações, danos,
                                 perdas ou despesas (incluindo honorários
                                 advocatícios) resultantes de:
@@ -756,7 +757,7 @@ export default function TermsPage() {
                             </p>
                             <p className="ml-4">
                                 Estes Termos constituem o acordo integral entre
-                                você e a PrimeFlow.
+                                você e a PrimeFLOW.
                             </p>
                             <p className="mt-4">
                                 <strong className="text-white">

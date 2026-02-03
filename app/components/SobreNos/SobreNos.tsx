@@ -7,8 +7,8 @@ export default function SobreNos() {
                 <h2 className="text-4xl md:text-5xl font-black mb-6 text-white">
                     Sobre nós
                 </h2>
-                <p className="text-gray-300 text-lg md:text-xl leading-relaxed drop-shadow-md text-justify pr-16">
-                    O <strong>Prime Flow</strong> é uma plataforma moderna que
+                <p className="text-gray-300 text-lg md:text-xl leading-relaxed drop-shadow-md text-justify">
+                    O <strong>PrimeFLOW</strong> é uma plataforma moderna que
                     transforma dados em insights. Com um dashboard intuitivo e
                     ferramentas poderosas de análise, ajudamos empresas a tomar
                     decisões melhores e mais rápidas. Desenvolvido com as

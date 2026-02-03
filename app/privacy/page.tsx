@@ -34,7 +34,7 @@ export default function PrivacyPage() {
                                 Conformidade com o RGPD
                             </h3>
                             <p className="text-slate-300 text-sm leading-relaxed">
-                                A PrimeFlow está sediada em Portugal e opera em
+                                A PrimeFLOW está sediada em Portugal e opera em
                                 conformidade com o Regulamento Geral sobre a
                                 Proteção de Dados (RGPD) da União Europeia
                                 (Regulamento UE 2016/679) e a Lei n.º 58/2019 de
@@ -59,15 +59,16 @@ export default function PrivacyPage() {
                                 <strong className="text-white">
                                     Entidade:
                                 </strong>{" "}
-                                PrimeFlow - Soluções de Gestão Financeira, Lda.
+                                PrimeFLOW - Soluções de Gestão Financeira, Lda.
                             </p>
                             <p>
-                                <strong className="text-white">NIF:</strong>{" "}
-                                [Número de Identificação Fiscal]
+                                <strong className="text-white">NIF:</strong> 501
+                                007 287
                             </p>
                             <p>
                                 <strong className="text-white">Sede:</strong>{" "}
-                                [Morada completa], Portugal
+                                Atrium Saldanha, Praça Duque de Saldanha, 8º
+                                E/F, 1050-094, Portugal
                             </p>
                             <p>
                                 <strong className="text-white">Email:</strong>{" "}
@@ -155,7 +156,7 @@ export default function PrivacyPage() {
                                 </h3>
                                 <p>
                                     Os dados são tratados para permitir o acesso
-                                    e utilização da plataforma PrimeFlow,
+                                    e utilização da plataforma PrimeFLOW,
                                     incluindo gestão de conta, dashboard,
                                     invoices e customers.
                                 </p>
@@ -216,7 +217,7 @@ export default function PrivacyPage() {
                         </h2>
                         <div className="space-y-4 text-slate-300">
                             <p>
-                                A PrimeFlow não vende, aluga ou partilha dados
+                                A PrimeFLOW não vende, aluga ou partilha dados
                                 pessoais com terceiros para fins de marketing.
                                 Os dados apenas são partilhados nas seguintes
                                 situações:

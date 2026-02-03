@@ -8,29 +8,37 @@ import {
 } from "react-icons/si";
 import SobreNos from "../SobreNos/SobreNos";
 import GaleriaAnimada from "../GaleriaAnimada/GaleriaAnimada";
+import GaleriaAnimadaMobile from "../GaleriaAnimadaMobile/GaleriaAnimadaMobile";
 
 function Plataforma() {
     return (
         <div className="bg-slate-950 font-sans w-full max-w-full overflow-hidden">
             {/* Seção com 2 colunas - Sobre Nós e Galeria */}
-            <section id="Plataforma" className="w-full max-w-full relative pt-16 pb-16">
+            <section
+                id="Plataforma"
+                className="w-full max-w-full relative pt-16 pb-8"
+            >
                 {/* Desktop: 2 colunas */}
-                <div className="hidden md:flex items-start w-full max-w-full">
+                <div className="hidden md:flex items-start w-full max-w-full pb-8">
                     {/* Coluna Esquerda - Sobre Nós (Fixo) */}
-                    <div className="w-1/2 max-w-[50%]">
+                    <div className="w-2/5 max-w-[100%]">
                         <SobreNos />
                     </div>
 
                     {/* Coluna Direita - Galeria Animada */}
-                    <div className="w-1/2 max-w-[50%] overflow-hidden">
+                    <div className="w-3/5 max-w-[100%] mt-[-2.5rem]">
                         <GaleriaAnimada />
                     </div>
                 </div>
 
                 {/* Mobile: Stack vertical */}
-                <div className="md:hidden w-full max-w-full overflow-hidden">
-                    <SobreNos />
-                    <GaleriaAnimada />
+                <div className="md:hidden text-center overflow-hidden">
+                    <div className="mb-16 px-6">
+                        <SobreNos />
+                    </div>
+                    <div className="mb-18 px-6">
+                        <GaleriaAnimadaMobile />
+                    </div>
                 </div>
             </section>
 

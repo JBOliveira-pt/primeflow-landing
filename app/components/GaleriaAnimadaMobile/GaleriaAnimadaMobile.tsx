@@ -11,19 +11,19 @@ interface ImagemGaleria {
 const imagens: ImagemGaleria[] = [
     {
         id: 1,
-        src: "/images/customers-ecra.png",
+        src: "/images/dashboard-ecramobile.png",
     },
     {
         id: 2,
-        src: "/images/invoices-ecra.png",
+        src: "/images/invoices-ecramobile.png",
     },
     {
         id: 3,
-        src: "/images/dashboard-ecra.png",
+        src: "/images/dashboardrevenue-ecramobile.png",
     },
 ];
 
-export default function GaleriaAnimada() {
+export default function GaleriaAnimadaMobile() {
     const [scrollProgress, setScrollProgress] = useState(0);
     const containerRef = useRef<HTMLDivElement>(null);
 
@@ -35,18 +35,13 @@ export default function GaleriaAnimada() {
             const rect = element.getBoundingClientRect();
             const viewportHeight = window.innerHeight;
 
-            // Início da animação: quando o topo do elemento entra na parte inferior da viewport
-            // Fim da animação: quando o centro do elemento está no centro da viewport
             const elementTop = rect.top;
             const elementHeight = rect.height;
             const elementCenter = elementTop + elementHeight / 2;
             const viewportCenter = viewportHeight / 2;
 
-            // Calcula o progress:
-            // progress = 0 quando elementTop = viewportHeight (começa a entrar)
-            // progress = 1 quando elementCenter = viewportCenter (centralizado)
-            const startPosition = viewportHeight + 150; // Começa quando entra na parte inferior
-            const endPosition = viewportCenter; // Termina quando centro está no meio
+            const startPosition = viewportHeight + 150;
+            const endPosition = viewportCenter + 150;
             const distanceToTravel = startPosition - endPosition;
 
             const currentPosition = elementCenter;
@@ -62,7 +57,7 @@ export default function GaleriaAnimada() {
         };
 
         window.addEventListener("scroll", handleScroll);
-        handleScroll(); // Chamar uma vez no mount
+        handleScroll();
 
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
@@ -73,30 +68,30 @@ export default function GaleriaAnimada() {
             className="flex flex-col items-center justify-start bg-slate-950 px-4 sm:px-8 pt-8 pb-2 relative w-full max-w-full"
         >
             {/* Container com posição relativa para sobrepor imagens */}
-            <div className="relative w-full max-w-3xl flex-1 min-h-[350px]">
+            <div className="relative w-full max-w-[180px] flex-1 min-h-[420px]">
                 {imagens.map((imagem, index) => {
-                    const topOffset = index * 15;
-                    const delay = index * 0.08;
+                    const leftOffset = index * 20; // Deslocamento horizontal entre as imagens
+                    const delay = index * 0.01;
 
                     // Calcula o progresso individual de cada imagem com delay
                     const imageProgress = Math.max(
                         0,
-                        Math.min(1, scrollProgress * 1.1 - delay),
+                        Math.min(1, scrollProgress * 1 - delay),
                     );
 
-                    // Define o limite de saída para cada imagem
-                    // Primeira imagem (index 0): vai até 125% para esquerda
-                    // Segunda imagem (index 1): para em 75%
-                    // Terceira imagem (index 2): para em 50%
+                    // Define o limite de saída para cada imagem (vertical)
+                    // Primeira imagem (index 0): vai até 100% para cima
+                    // Segunda imagem (index 1): para em 50%
+                    // Terceira imagem (index 2): para em -25%
                     const maxTranslate =
-                        index === 0 ? 100 : index === 1 ? 50 : -25;
+                        index === 0 ? 80 : index === 1 ? -0 : -100;
 
-                    // Animação:
-                    // imageProgress 0 = 100% à direita (fora da tela)
+                    // Animação vertical:
+                    // imageProgress 0 = 100% abaixo (fora da tela)
                     // imageProgress 0.5 = 0% (posição final, centro)
-                    // imageProgress 1 = -maxTranslate% (sai pela esquerda)
-                    const translateX =
-                        ((1 - imageProgress * 2) * maxTranslate) / 10;
+                    // imageProgress 1 = -maxTranslate% (sai por cima)
+                    const translateY =
+                        ((1 - imageProgress * 2) * maxTranslate) / 5;
 
                     return (
                         <div
@@ -104,10 +99,10 @@ export default function GaleriaAnimada() {
                             className="absolute rounded-xl overflow-hidden shadow-2xl border border-gray-700 w-full"
                             style={{
                                 height: "100%",
-                                top: `${topOffset}%`,
+                                left: `${leftOffset}%`,
                                 zIndex: imagens.length + index,
                                 opacity: Math.min(1, imageProgress * 2),
-                                transform: `translateX(${translateX}%)`,
+                                transform: `translateY(${translateY}%)`,
                                 transition:
                                     "opacity 0.3s ease-out, transform 0.3s ease-out",
                             }}

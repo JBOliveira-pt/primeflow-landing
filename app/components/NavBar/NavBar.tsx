@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
         { name: "Início", href: "#Home" },
         { name: "Plataforma", href: "#Plataforma" },
         { name: "Funcionalidades", href: "#Funcionalidades" },
-        { name: "Equipe", href: "#Equipe" },
+        { name: "Equipa", href: "#Equipe" },
     ];
 
     return (
@@ -108,7 +108,7 @@ const Navbar: React.FC = () => {
                                 isScrolled ? "text-gray-900" : "text-white"
                             }`}
                         >
-                            Prime <span className="text-black-600">FLOW</span>
+                            Prime<span className="text-black-600">FLOW</span>
                         </span>
                     </a>
 
