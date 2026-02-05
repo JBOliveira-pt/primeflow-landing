@@ -62,13 +62,13 @@ const Navbar: React.FC = () => {
     const handleLoginClick = (e?: React.MouseEvent) => {
         e?.preventDefault();
         setIsMobileMenuOpen(false);
-        router.push("/login");
+        router.push("https://primeflow-app.vercel.app/login");
     };
 
     const handleSingupClick = (e?: React.MouseEvent) => {
         e?.preventDefault();
         setIsMobileMenuOpen(false);
-        router.push("/singup");
+        router.push("https://primeflow-app.vercel.app/login");
     };
 
     const navLinks = [
