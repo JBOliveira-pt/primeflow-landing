@@ -81,9 +81,9 @@ export default function Criadores() {
     return (
         <section
             id="Equipe"
-            className="py-24 bg-slate-950 relative overflow-hidden"
+            className="py-28 bg-slate-950 relative overflow-hidden"
         >
-            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent"></div>
+            <div className="absolute top-14 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent"></div>
 
             {/* Decorative corner glow */}
             <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-indigo-600/5 rounded-full blur-[100px] pointer-events-none"></div>
