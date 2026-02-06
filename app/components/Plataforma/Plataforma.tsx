@@ -53,7 +53,7 @@ function Plataforma() {
                     Alto Valor agregado
                 </h2>
 
-                <h2 className="text-4xl md:text-5xl font-black mb-6 text-white">
+                <h2 className="text-4xl justify-center text-center md:text-5xl font-black mb-6 text-white">
                     Tecnologias Embarcadas
                 </h2>
 
@@ -71,14 +71,14 @@ function Plataforma() {
                             DevOps &<br />
                             Management
                         </h3>
-                        <div className="grid grid-cols-2 gap-12 items-center justify-items-center">
+                        <div className="grid grid-cols-2 gap-10 items-center justify-items-center">
                             <img
                                 src="https://pub-b07f842ba4ae41bc8cf97ca6adeff08b.r2.dev/primeflow-images/logos/vscode.png"
                                 alt="VS Code"
                                 className="w-12 h-12 object-contain"
                             />
                             <img
-                                src="https://pub-b07f842ba4ae41bc8cf97ca6adeff08b.r2.dev/primeflow-images/logos/github.svg"
+                                src="https://pub-b07f842ba4ae41bc8cf97ca6adeff08b.r2.dev/primeflow-images/logos/github-white.png"
                                 alt="GitHub"
                                 className="w-12 h-12 object-contain"
                             />
@@ -88,7 +88,7 @@ function Plataforma() {
                                 className="w-12 h-12 object-contain"
                             />
                             <img
-                                src="https://pub-b07f842ba4ae41bc8cf97ca6adeff08b.r2.dev/primeflow-images/logos/jira.png"
+                                src="https://pub-b07f842ba4ae41bc8cf97ca6adeff08b.r2.dev/primeflow-images/logos/jira-white.PNG"
                                 alt="Jira"
                                 className="w-12 h-12 object-contain"
                             />
@@ -103,7 +103,7 @@ function Plataforma() {
                         </h3>
                         <div className="flex flex-col items-center gap-8 py-2">
                             <img
-                                src="https://pub-b07f842ba4ae41bc8cf97ca6adeff08b.r2.dev/primeflow-images/logos/vercel.png"
+                                src="https://pub-b07f842ba4ae41bc8cf97ca6adeff08b.r2.dev/primeflow-images/logos/vercel-white.png"
                                 alt="Vercel"
                                 className="w-28 h-14 object-contain"
                             />
@@ -127,7 +127,7 @@ function Plataforma() {
                                 className="w-14 h-14 object-contain"
                             />
                             <img
-                                src="https://pub-b07f842ba4ae41bc8cf97ca6adeff08b.r2.dev/primeflow-images/logos/clerk.png"
+                                src="https://pub-b07f842ba4ae41bc8cf97ca6adeff08b.r2.dev/primeflow-images/logos/clerk-white.png"
                                 alt="Clerk"
                                 className="w-20 h-14 object-contain"
                             />
