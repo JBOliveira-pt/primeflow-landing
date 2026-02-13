@@ -18,7 +18,6 @@ export const metadata: Metadata = {
     title: "PrimeFlow - MVP",
     description: "The future of financial clarity starts here.",
 };
-
 export default function RootLayout({
     children,
 }: Readonly<{

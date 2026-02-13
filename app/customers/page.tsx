@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import FeatureCard from "@/app/components/FeatureCard/FeatureCard";
 import FeatureSkeleton from "@/app/components/Skeleton/Skeleton";
 import { RegisterModal, LoginModal } from "@/app/components/PopUp/PopUp";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function CustomersDemoPage() {
     const [loadedCards, setLoadedCards] = useState<boolean[]>([
@@ -19,11 +20,14 @@ export default function CustomersDemoPage() {
         setIsRegisterOpen(true);
     };
 
-    const toggleToLogin = () => {
-        setIsRegisterOpen(false);
-        setIsLoginOpen(true);
-    };
+        const router = useRouter();
+    
 
+  const handleLoginClick = (e?: React.MouseEvent) => {
+               e?.preventDefault();
+               setIsLoginOpen(false);
+               router.push("https://primeflow-app.vercel.app/login");
+           };
     useEffect(() => {
         const delays = [1000, 3000, 5000];
 
@@ -43,7 +47,7 @@ export default function CustomersDemoPage() {
             <div className="relative z-0">
                 <div className="text-center text-white mt-20">
                     <h1 className="text-5xl font-bold mb-4">
-                        PrimeFLOW <strong>Customers</strong>
+                        PrimeFLOW <strong>Clientes</strong>
                     </h1>
                     <p className="text-xl text-gray-200">
                         Gerencie sua base de clientes de forma eficiente
@@ -155,7 +159,7 @@ export default function CustomersDemoPage() {
                             clientes organizada e acessível.
                         </p>
                         <button
-                            onClick={() => setIsRegisterOpen(true)}
+                            onClick={() => handleLoginClick()}
                             className="bg-white text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-300 transition-colors shadow-lg cursor-pointer"
                         >
                             Começar Agora
@@ -163,17 +167,6 @@ export default function CustomersDemoPage() {
                     </div>
                 </div>
             </div>
-
-            <RegisterModal
-                isOpen={isRegisterOpen}
-                onClose={() => setIsRegisterOpen(false)}
-                onToggleLogin={toggleToLogin}
-            />
-            <LoginModal
-                isOpen={isLoginOpen}
-                onClose={() => setIsLoginOpen(false)}
-                onToggleRegister={toggleToRegister}
-            />
         </div>
     );
 }

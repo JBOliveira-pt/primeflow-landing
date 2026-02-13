@@ -3,7 +3,8 @@
 import React, { useState, useEffect } from "react";
 import FeatureCard from "@/app/components/FeatureCard/FeatureCard";
 import FeatureSkeleton from "@/app/components/Skeleton/Skeleton";
-import { RegisterModal, LoginModal } from "@/app/components/PopUp/PopUp";
+import { usePathname, useRouter } from "next/navigation";
+
 
 export default function InvoicesDemoPage() {
     const [loadedCards, setLoadedCards] = useState<boolean[]>([
@@ -11,6 +12,7 @@ export default function InvoicesDemoPage() {
         false,
         false,
     ]);
+        const router = useRouter();
     const [isRegisterOpen, setIsRegisterOpen] = useState(false);
     const [isLoginOpen, setIsLoginOpen] = useState(false);
 
@@ -19,10 +21,11 @@ export default function InvoicesDemoPage() {
         setIsRegisterOpen(true);
     };
 
-    const toggleToLogin = () => {
-        setIsRegisterOpen(false);
-        setIsLoginOpen(true);
-    };
+    const handleLoginClick = (e?: React.MouseEvent) => {
+            e?.preventDefault();
+            setIsLoginOpen(false);
+            router.push("https://primeflow-app.vercel.app/login");
+        };
 
     useEffect(() => {
         const delays = [1000, 3000, 5000];
@@ -213,7 +216,7 @@ export default function InvoicesDemoPage() {
                             gerencia seu negócio.
                         </p>
                         <button
-                            onClick={() => setIsRegisterOpen(true)}
+                            onClick={() => handleLoginClick()}
                             className="bg-white text-gray-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-300 transition-colors shadow-lg cursor-pointer"
                         >
                             Começar Agora
@@ -221,17 +224,6 @@ export default function InvoicesDemoPage() {
                     </div>
                 </div>
             </div>
-
-            <RegisterModal
-                isOpen={isRegisterOpen}
-                onClose={() => setIsRegisterOpen(false)}
-                onToggleLogin={toggleToLogin}
-            />
-            <LoginModal
-                isOpen={isLoginOpen}
-                onClose={() => setIsLoginOpen(false)}
-                onToggleRegister={toggleToRegister}
-            />
         </div>
     );
 }
