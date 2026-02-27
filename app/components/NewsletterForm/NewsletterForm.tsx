@@ -42,7 +42,7 @@ export default function NewsletterForm() {
     return (
         <div className="w-full max-w-md mx-auto p-6 bg-slate-900 rounded-xl border border-slate-800">
             <h3 className="text-2xl font-bold text-white mb-4">
-                📧 Inscreva-se em nossa Newsletter
+                Inscreva-se em nossa Newsletter
             </h3>
             <p className="text-slate-400 mb-6">
                 Receba novidades e atualizações do <strong>PrimeFLOW</strong>
@@ -88,7 +88,7 @@ export default function NewsletterForm() {
                 <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                 >
                     {loading ? "Processando..." : "Inscrever-se"}
                 </button>

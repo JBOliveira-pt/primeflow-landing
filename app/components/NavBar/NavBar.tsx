@@ -75,7 +75,9 @@ const Navbar: React.FC = () => {
         { name: "Início", href: "#Home" },
         { name: "Plataforma", href: "#Plataforma" },
         { name: "Funcionalidades", href: "#Funcionalidades" },
+        { name: "Planos", href: "#Planos" },
         { name: "Equipa", href: "#Equipe" },
+        
     ];
 
     return (
@@ -264,13 +266,13 @@ const Navbar: React.FC = () => {
                     <div className={`mt-12 flex flex-col items-center gap-4`}>
                         <button
                             onClick={handleLoginClick}
-                            className="w-56 px-4 py-3 rounded-md font-medium text-white bg-transparent border border-white/40 hover:bg-white/10 transition-colors"
+                            className="w-56 px-4 py-3 rounded-md font-medium text-white bg-transparent border border-white/40 hover:bg-white/10 transition-colors cursor-pointer"
                         >
                             Entrar
                         </button>
                         <button
                             onClick={handleSingupClick}
-                            className="w-56 px-4 py-3 rounded-md font-semibold bg-indigo-600 text-white hover:bg-indigo-700 transition-colors"
+                            className="w-56 px-4 py-3 rounded-md font-semibold bg-indigo-600 text-white hover:bg-indigo-700 transition-colors cursor-pointer"
                         >
                             Criar Conta
                         </button>

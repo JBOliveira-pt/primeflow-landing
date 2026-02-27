@@ -120,7 +120,7 @@ export default function Criadores() {
                             name="Everton Claudino"
                             role="Software developer "
                             bio=" "
-                            img="https://media.licdn.com/dms/image/v2/D4E03AQGgWUrgZE6DCQ/profile-displayphoto-crop_800_800/B4EZsM72DDHoAI-/0/1765448573750?e=1770854400&v=beta&t=11S0YVOs6l8737Ixe1MGBzR2dG-n0_F1W32cZoIg1oU"
+                            img="https://avatars.githubusercontent.com/u/97559532?s=400&u=e6ca9f3580fc93eefb9b49e2a1f854b6128fbbb7&v=4"
                             linkedin="https://www.linkedin.com/in/evertonclaudino/"
                             github="https://github.com/EvertonClaudino"
                         />
