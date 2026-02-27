@@ -9,6 +9,7 @@ import {
 import SobreNos from "../SobreNos/SobreNos";
 import GaleriaAnimada from "../GaleriaAnimada/GaleriaAnimada";
 import GaleriaAnimadaMobile from "../GaleriaAnimadaMobile/GaleriaAnimadaMobile";
+import DashboardSection from "../DashboardSection/DashboardSection";
 
 function Plataforma() {
     return (
@@ -42,7 +43,8 @@ function Plataforma() {
                 </div>
             </section>
 
-            {/* Icons Section - Tecnologias Utilizadas */}
+            {/* Dashboard Section */}
+            <DashboardSection />
 
             {/* Icons Section - Tecnologias Utilizadas */}
             <section className="w-full bg-slate-950 mt-8 pt-16 pb-16 flex flex-col items-center justify-center px-4">
