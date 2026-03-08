@@ -5,14 +5,13 @@ import FeatureCard from "@/app/components/FeatureCard/FeatureCard";
 import FeatureSkeleton from "@/app/components/Skeleton/Skeleton";
 import { usePathname, useRouter } from "next/navigation";
 
-
 export default function InvoicesDemoPage() {
     const [loadedCards, setLoadedCards] = useState<boolean[]>([
         false,
         false,
         false,
     ]);
-        const router = useRouter();
+    const router = useRouter();
     const [isRegisterOpen, setIsRegisterOpen] = useState(false);
     const [isLoginOpen, setIsLoginOpen] = useState(false);
 
@@ -22,10 +21,10 @@ export default function InvoicesDemoPage() {
     };
 
     const handleLoginClick = (e?: React.MouseEvent) => {
-            e?.preventDefault();
-            setIsLoginOpen(false);
-            router.push("https://primeflow-app.vercel.app/login");
-        };
+        e?.preventDefault();
+        setIsLoginOpen(false);
+        router.push("https://primeflow-app.vercel.app/login");
+    };
 
     useEffect(() => {
         const delays = [1000, 3000, 5000];
@@ -48,7 +47,7 @@ export default function InvoicesDemoPage() {
                 {/* Header */}
                 <div className="text-center text-white mt-20">
                     <h1 className="text-5xl font-bold mb-4">
-                        PrimeFLOW <strong>Invoices</strong>
+                        PrimeFLOW <strong>Faturas</strong>
                     </h1>
                     <p className="text-xl text-gray-200">
                         Gerencie todas as suas faturas de forma simples e
@@ -94,7 +93,7 @@ export default function InvoicesDemoPage() {
                                         emoji: "🏷️",
                                         label: "Status",
                                         description:
-                                            "filtre entre Paid e Pending",
+                                            "filtre entre Pago e Pendente",
                                     },
                                 ]}
                                 imageName="Search Invoices"

@@ -70,7 +70,7 @@ export default function Footer() {
                                     href="/#Equipe"
                                     className="text-slate-400 hover:text-indigo-400 transition-colors text-sm"
                                 >
-                                    Equipa
+                                    Equipe
                                 </Link>
                             </nav>
                         </div>
@@ -95,21 +95,21 @@ export default function Footer() {
                                 className="text-slate-400 hover:text-indigo-400 transition-colors text-sm flex items-center gap-2"
                             >
                                 <span className="text-lg"></span>
-                                <span>Invoices</span>
+                                <span>Faturas</span>
                             </Link>
                             <Link
                                 href="/customers"
                                 className="text-slate-400 hover:text-indigo-400 transition-colors text-sm flex items-center gap-2"
                             >
                                 <span className="text-lg"></span>
-                                <span>Customers</span>
+                                <span>Clientes</span>
                             </Link>
                             <Link
                                 href="/users"
                                 className="text-slate-400 hover:text-indigo-400 transition-colors text-sm flex items-center gap-2"
                             >
                                 <span className="text-lg"></span>
-                                <span>Users</span>
+                                <span>Utilizadores</span>
                             </Link>
                         </nav>
 
@@ -170,8 +170,7 @@ export default function Footer() {
                             &copy; {new Date().getFullYear()} PrimeFLOW.
                             Desenvolvido por{" "}
                             <strong className="text-indigo-400">
-                                Jeison Oliveira, Everton Santos e Bernardo
-                                Rodrigues
+                                Jeison Oliveira & Everton Santos
                             </strong>
                         </p>
 
