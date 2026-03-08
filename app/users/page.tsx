@@ -43,10 +43,10 @@ export default function UsersDemoPage() {
             <div className="relative z-0">
                 <div className="text-center text-white mt-20">
                     <h1 className="text-5xl font-bold mb-4">
-                        PrimeFLOW <strong>Users</strong>
+                        PrimeFLOW <strong>Utilizadores</strong>
                     </h1>
                     <p className="text-xl text-gray-200">
-                        Gerencie usuários e permissões com segurança
+                        Gerencie utilizadores e permissões com segurança
                     </p>
                 </div>
 
@@ -54,9 +54,9 @@ export default function UsersDemoPage() {
                     <div className="space-y-20">
                         {loadedCards[0] ? (
                             <FeatureCard
-                                badge="👥 Gestão de Usuários"
+                                badge="👥 Gestão de Utilizadores"
                                 title="Controle Total de Acesso"
-                                description="Gerencie todos os usuários da plataforma com segurança."
+                                description="Gerencie todos os utilizadores da plataforma com segurança."
                                 items={[
                                     {
                                         emoji: "🔐",

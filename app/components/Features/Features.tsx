@@ -9,6 +9,7 @@ import {
     Users,
     FileText,
     CircleUserRound,
+    ReceiptText,
 } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -69,8 +70,8 @@ export default function Features() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8  mx-auto justify-items-center">
-                    <div className="">
+                <div className="grid grid-cols-1 lg:grid-cols-6 gap-8 mx-auto">
+                    <div className="lg:col-span-3">
                         <FeatureCard
                             icon={<BarChart3 size={24} />}
                             title="Dashboard"
@@ -80,7 +81,7 @@ Indicadores estratégicos, filtros dinâmicos e análise detalhada para acompanh
                         />
                     </div>
 
-                    <div className="">
+                    <div className="lg:col-span-3">
                         <FeatureCard
                             icon={<FileText size={24} />}
                             title="Faturas"
@@ -90,9 +91,19 @@ Crie, edite e acompanhe faturas com rapidez, organização e total controle sobr
                         />
                     </div>
 
-                    <div className="">
+                    <div className="lg:col-span-2">
                         <FeatureCard
-                            icon={<CircleUserRound size={24} />}
+                            icon={<ReceiptText size={24} />}
+                            title="Recibos"
+                            description="Emissão e controlo de recibos em poucos cliques.
+Registe pagamentos, acompanhe histórico por cliente e mantenha rastreabilidade total dos recebimentos."
+                            href="/receipts"
+                        />
+                    </div>
+
+                    <div className="lg:col-span-2">
+                        <FeatureCard
+                            icon={<Users size={24} />}
                             title="Clientes"
                             description="Gerenciamento seguro e estruturado da sua base de clientes.
 Busca avançada, visualização organizada e proteção de dados com conformidade e segurança."
@@ -100,9 +111,9 @@ Busca avançada, visualização organizada e proteção de dados com conformidad
                         />
                     </div>
 
-                    <div className="">
+                    <div className="lg:col-span-2">
                         <FeatureCard
-                            icon={<Users size={24} />}
+                            icon={<CircleUserRound size={24} />}
                             title="Utilizadores"
                             description="Controle de acesso com eficiência e segurança.
 Gerencie permissões, funções e acessos em um painel administrativo completo e intuitivo."
