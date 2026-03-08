@@ -120,11 +120,11 @@ export default function Footer() {
                             </h4>
                             <div className="space-y-2 flex flex-col items-center md:items-start">
                                 <a
-                                    href="mailto:contato@primeflow.com"
+                                    href="mailto:primeflow@outlook.pt"
                                     className="text-slate-400 hover:text-indigo-400 transition-colors text-sm flex items-center gap-2"
                                 >
                                     <Mail size={16} />
-                                    <span>contato@primeflow.com</span>
+                                    <span>primeflow@outlook.pt</span>
                                 </a>
                                 <div className="text-slate-400 text-sm flex items-center gap-2">
                                     <MapPin size={16} />

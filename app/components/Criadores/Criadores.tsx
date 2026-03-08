@@ -103,11 +103,11 @@ export default function Criadores() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto justify-items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 max-w-4xl mx-auto justify-items-center">
                     <div className="w-full max-w-sm">
                         <CreatorCard
-                            name="Jeison Oliveiras"
-                            role="Java Developer | Digital Architect"
+                            name="Jeison Oliveira"
+                            role="Java | Full Stack Developer"
                             bio=" "
                             img="https://avatars.githubusercontent.com/u/166177538?v=4"
                             linkedin="https://www.linkedin.com/in/jboliveira-pt/"
@@ -123,17 +123,6 @@ export default function Criadores() {
                             img="https://avatars.githubusercontent.com/u/97559532?s=400&u=e6ca9f3580fc93eefb9b49e2a1f854b6128fbbb7&v=4"
                             linkedin="https://www.linkedin.com/in/evertonclaudino/"
                             github="https://github.com/EvertonClaudino"
-                        />
-                    </div>
-
-                    <div className="w-full max-w-sm">
-                        <CreatorCard
-                            name="Bernardo Rodrigues"
-                            role="Full Stack Developer"
-                            bio=" "
-                            img="https://avatars.githubusercontent.com/u/74968732?v=4"
-                            linkedin="https://www.linkedin.com/in/bernardo-silva-rodrigues-6a6b6722b/"
-                            github="https://github.com/BernardoR18"
                         />
                     </div>
                 </div>

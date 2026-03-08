@@ -73,10 +73,10 @@ export default function PrivacyPage() {
                             <p>
                                 <strong className="text-white">Email:</strong>{" "}
                                 <a
-                                    href="mailto:dpo@primeflow.pt"
+                                    href="mailto:primeflow@outlook.pt"
                                     className="text-indigo-400 hover:text-indigo-300"
                                 >
-                                    dpo@primeflow.pt
+                                    primeflow@outlook.pt
                                 </a>
                             </p>
                             <p>
@@ -84,10 +84,10 @@ export default function PrivacyPage() {
                                     Encarregado de Proteção de Dados (DPO):
                                 </strong>{" "}
                                 <a
-                                    href="mailto:dpo@primeflow.pt"
+                                    href="mailto:primeflow@outlook.pt"
                                     className="text-indigo-400 hover:text-indigo-300"
                                 >
-                                    dpo@primeflow.pt
+                                    primeflow@outlook.pt
                                 </a>
                             </p>
                         </div>
@@ -417,10 +417,10 @@ export default function PrivacyPage() {
                                             Email:
                                         </strong>{" "}
                                         <a
-                                            href="mailto:dpo@primeflow.pt"
+                                            href="mailto:primeflow@outlook.pt"
                                             className="text-indigo-400 hover:text-indigo-300"
                                         >
-                                            dpo@primeflow.pt
+                                            primeflow@outlook.pt
                                         </a>
                                     </p>
                                     <p className="text-sm text-slate-400">
@@ -579,10 +579,10 @@ export default function PrivacyPage() {
                                             Email:
                                         </strong>{" "}
                                         <a
-                                            href="mailto:dpo@primeflow.pt"
+                                            href="mailto:primeflow@outlook.pt"
                                             className="text-indigo-400 hover:text-indigo-300"
                                         >
-                                            dpo@primeflow.pt
+                                            primeflow@outlook.pt
                                         </a>
                                     </p>
                                     <p>

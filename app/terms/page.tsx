@@ -84,10 +84,10 @@ export default function TermsPage() {
                                         Email:
                                     </strong>{" "}
                                     <a
-                                        href="mailto:legal@primeflow.pt"
+                                        href="mailto:primeflow@outlook.pt"
                                         className="text-indigo-400 hover:text-indigo-300"
                                     >
-                                        legal@primeflow.pt
+                                        primeflow@outlook.pt
                                     </a>
                                 </p>
                                 <p>
@@ -813,10 +813,10 @@ export default function TermsPage() {
                                             Email:
                                         </strong>{" "}
                                         <a
-                                            href="mailto:legal@primeflow.pt"
+                                            href="mailto:primeflow@outlook.pt"
                                             className="text-indigo-400 hover:text-indigo-300"
                                         >
-                                            legal@primeflow.pt
+                                            primeflow@outlook.pt
                                         </a>
                                     </p>
                                     <p>
